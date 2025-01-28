@@ -22,7 +22,7 @@ public class Main {
              a = Integer.parseInt(parts[0]); // 1 число из String в int
              b = Integer.parseInt(parts[2]); // 2 число из String в int
         } catch (NumberFormatException e) {
-            throw new Exception("Ошибка: Вводите только целые числа.");
+            throw new Exception("Ошибка: Вводи только целые числа.");
         }
         String operator = parts[1]; // Оператор ("+", "-", "*", "/")
 
@@ -51,7 +51,7 @@ public class Main {
                 result = a / b;
                 break;
             default:
-                throw new Exception("Ошибка: Используйте +, -, *, /.");
+                throw new Exception("Ошибка: Используй +, -, *, /.");
         }
 
         return String.valueOf(result);
